@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #0E0E0E;
+    color: white;
+}
+
+nav{
+    height: 90px;
+    background-color: transparent;
+}
+
+.navbar-brand{
+    margin-left: 80px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.navbar-nav{
+    margin-left: 450px;
+}
+
+.navbar-nav li{
+    margin-left: 30px;
+}
+
+.nav-item-btn{
+    background-color: white;
+    padding: 5px 35px;
+    border: 2px solid white;
+}
+
+.navbar-nav li a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.ball{
+    width: 500px;
+    height: 500px;
+    background-color: #202020;
+    border-radius: 50%;
+    position: absolute;
+    top: -190px;
+    left: 150px;
+    animation: ball ease-in 1s;
+    animation-iteration-count: 1;
+    z-index: -999;
+}
+
+@keyframes ball{
+    from{
+        top: -170px;
+    }
+    to{
+        top: -190px;
+    }
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 100px;
+    font-weight: normal;
+    z-index: 1;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
+}
+
+.f-row{
+    display: flex;
+}
+
+.first{
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/main-home-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 100px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.first::before{
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.first:hover{
+    margin-top: 80px;
+}
+
+.first p{
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.second {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/simple-portfolio-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 100px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.second::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.second:hover {
+    margin-top: 80px;
+}
+
+.second p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.third {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/creative-agency-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 100px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.third::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.third:hover {
+    margin-top: 80px;
+}
+
+.third p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.s-row{
+    display: flex;
+}
+
+.s-first {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/freelancer-portfolio-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.s-first::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.s-first:hover {
+    margin-top: 140px;
+}
+
+.s-first p {
+    position: absolute;
+    top: 110%;
+    left: 25%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.s-second {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/interactive-dark-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.s-second::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.s-second:hover {
+    margin-top: 140px;
+}
+
+.s-second p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.s-third {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/digital-agency-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.s-third::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.s-third:hover {
+    margin-top: 140px;
+}
+
+.s-third p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.t-row{
+    display: flex;
+}
+
+.t-first {
+    height: 180px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/fullscreen-slider-740-362.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.t-first::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.t-first:hover {
+    margin-top: 140px;
+}
+
+.t-first p {
+    position: absolute;
+    top: 110%;
+    left: 25%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.t-second {
+    height: 180px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/carousel-light-740-362.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.t-second::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.t-second:hover {
+    margin-top: 140px;
+}
+
+.t-second p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.t-third {
+    height: 180px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/carousel-dark-740-362.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.t-third::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.t-third:hover {
+    margin-top: 140px;
+}
+
+.t-third p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.f-first {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/interactive-light-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.f-first::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.f-first:hover {
+    margin-top: 140px;
+}
+
+.f-first p {
+    position: absolute;
+    top: 110%;
+    left: 25%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.f-second {
+    height: 300px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/left-menu-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 160px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.f-second::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.f-second:hover {
+    margin-top: 140px;
+}
+
+.f-second p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.s-page{
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    display: flex;
+    color: black;
+}
+
+.back-img{
+    width: 470px;
+    height: 300px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/demo-1-940-602.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 2350px;
+    left: 100px;
+    box-shadow: 1px 1px 10px rgb(176, 176, 176);
+}
+
+.front-img {
+    width: 370px;
+    height: 280px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/demo-2-740-560.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 2580px;
+    left: 300px;
+    box-shadow: 1px 1px 10px rgb(176, 176, 176);
+}
+
+.s-page h3{
+    position: absolute;
+    top: 2450px;
+    right: 300px;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.s-page p{
+    position: absolute;
+    top: 2570px;
+    right: 230px;
+    width: 25%;
+    text-align: start;
+    font-size: 17px;
+}
+
+.s-page a button{
+    position: absolute;
+    top: 2720px;
+    right: 400px;
+    border: none;
+    background-color: #0E0E0E;
+    padding: 15px 40px;
+    color: white;
+}
+
+.t-page{
+        width: 100%;
+        height: 100vh;
+        background-color: #0E0E0E;
+        color: white;
+        position: relative;
+}
+
+.t-page h2{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 90vh;
+    font-size: 40px;
+}
+
+.t-page-row{
+    display: flex;
+    flex-direction: row;
+}
+.t-page-row-first{
+        height: 180px;
+        width: 360px;
+        background-image: url(https://runwebrun.com/themebau/assets/images/demos/classic-menu-740-362.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-left: 75px;
+        margin-top: 250px;
+        position: relative;
+        transition: all ease-in 300ms;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+}
+
+.t-page-row-first::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.t-page-row-first:hover {
+    margin-top: 230px;
+}
+
+.t-page-row-first p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.t-page-row-second {
+    height: 180px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/white-left-menu-740-362.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 250px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.t-page-row-second::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.t-page-row-second:hover {
+    margin-top: 230px;
+}
+
+.t-page-row-second p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.t-page-row-third {
+    height: 180px;
+    width: 360px;
+    background-image: url(https://runwebrun.com/themebau/assets/images/demos/main-home-740-600.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 250px;
+    position: relative;
+    transition: all ease-in 300ms;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.t-page-row-third::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-color: #202020;
+    width: 100%;
+    position: absolute;
+    top: -14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.t-page-row-third:hover {
+    margin-top: 230px;
+}
+
+.t-page-row-third p {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+@media (max-width:1000px){
+    .f-row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .s-row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
